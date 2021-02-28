@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Join Us</title>
+	<link rel="icon" href="ico.jpg" type="image/ico" sizes="16x16">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.Contact').hide();
+		$('.call').click(function()
+			{
+				$('.Contact').animate({height: 'toggle'});			
+			});
+	});
+	function new_window_wtsp()
+	{
+		window.open("https://wa.me/212606200772");
+	}
+</script>
+
+	<link rel="stylesheet" type="text/css" href="trad.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Lemonada:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width =device-width, initial-scale=1">
+</head>
+<body>
+
+
+<section  id="banner">
+	<a href="trad.html"><img src="logo-all1.png" class="logo"></a>
+	<div class="banner-text">
+		<h1>نربحو كاملين </h1>
+		<p> ديالنا وضمن الرباح VIP اشترك في المجموعة </p>
+	</div>
+</section>
+<div id="sideNav">
+	<nav>
+		<ul>
+			<li><a href="trad.html"> الرئيسية</a><i class="fa fa-home icon1"></i></li>
+			<li class="call"><a href="#"> اتصل بنا </a><i class="fa fa-phone-square icon1"></i></li>
+			<div class="Contact">			
+					<ul>
+						<li class="wtsp"><a href="#" onclick="new_window_wtsp()">Whatsapp</a><i class="fa fa-whatsapp icon1"></i></li>
+					</ul>
+			</div>
+			<li class="payment"><a href="Paiment Page.html"> طرق الدفع</a><i class="fa fa-credit-card icon1"></i></li>
+		</ul>
+	</nav>
+</div>
+<div id="menubtn">
+	<img src="menu.png" id="menu">
+</div>
+<script>
+	var menubtn = document.getElementById("menubtn")
+	var sideNav = document.getElementById("sideNav")
+	var menu = document.getElementById("menu")
+
+	sideNav.style.right = "-250px";
+
+
+	menubtn.onclick = function(){
+		if(sideNav.style.right == "-250px"){
+			sideNav.style.right = "0";
+			menu.src = "close.png";
+		}
+		else {
+			sideNav.style.right = "-250px";
+			menu.src = "menu.png";
+		}
+	}
+</script>
+
+<div class="pricing-plan-container">
+	<section class="pricing-plan pricing-plan__highlighted">
+	<div class="pricing-plan__header silver">
+		<h1 class="pricing-plan__title">Silver Pack</h1>
+		<h2 class="pricing-plan__summary">Pour les débutants</h2>
+	</div>
+	<div class="pricing-plan__description">
+		<ul class="pricing-plan__list">
+			<li class="pricing-plan__feature">Accés espace normal pour suivre les signaux et leur performance</li>
+			<li class="pricing-plan__feature">Formation Forex pour les débutants et professionel</li>
+			<li class="pricing-plan__feature">Accompagnement personnel</li>
+			<li class="pricing-plan__feature"><strong>1 à 5 signaux par jour</strong></li>
+		</ul>
+		
+	</div>
+	<div class="pricing-plan__actions">
+		<p class="pricing-plan__cost">530DH</p>
+		<p class="pricing-plan__text"><strong>30 Jours</strong></p>
+		<a href="Paiment Page.html" class="pricing-plan__button">Acheter maintenant</a>
+
+	</div>
+</section><section class="pricing-plan pricing-plan__highlighted">
+	<div class="pricing-plan__header gold">
+		<h1 class="pricing-plan__title">Gold Pack</h1>
+		<h2 class="pricing-plan__summary">Pour les intermédiaires</h2>
+	</div>
+	<div class="pricing-plan__description">
+		<ul class="pricing-plan__list">
+			<li class="pricing-plan__feature">Accés espace VIP pour suivre les signaux et leur performance</li>
+			<li class="pricing-plan__feature">Formation Forex pour les débutants et professionel</li>
+			<li class="pricing-plan__feature">Accompagnement personnel</li>
+			<li class="pricing-plan__feature"><strong>5 à 8 signaux par jour</strong></li>
+		</ul>
+	</div>
+	<div class="pricing-plan__actions">
+		<p class="pricing-plan__cost">1000DH</p>
+		<p class="pricing-plan__text"><strong>A vie</strong></p>
+		<a href="Paiment Page.html" class="pricing-plan__button">Acheter maintenant</a>
+
+	</div>
+</section><section class="pricing-plan pricing-plan__highlighted">
+	<div class="pricing-plan__header black">
+		<h1 class="pricing-plan__title">Platinum Pack</h1>
+		<h2 class="pricing-plan__summary">Pour Les professionels</h2>
+	</div>
+	<div class="pricing-plan__description">
+		<ul class="pricing-plan__list">
+			<li class="pricing-plan__feature">Accés espace VIP pour suivre les signaux et leur performance</li>
+			<li class="pricing-plan__feature">Formation Forex pour les débutants et professionel</li>
+			<li class="pricing-plan__feature">Accompagnement personnel</li>
+			<li class="pricing-plan__feature"><strong>6 à 10 signaux par jour</strong></li>
+		</ul>
+	</div>
+	<div class="pricing-plan__actions">
+		<p class="pricing-plan__cost">2000DH</p>
+		<p class="pricing-plan__text"><strong>A vie</strong></p>
+		<a href="Paiment Page.html" class="pricing-plan__button">Acheter maintenant</a>
+	</div>
+</div>
+	<div class="copyright">
+		<hr style=" margin-bottom: 3px;">
+		<p style="background-color: white;color: #873339; font-style: italic;" >COPYRIGHT ©️ 2021 MAMOUNCOMPANY. TOUS DROITS RÉSERVÉS.</p>
+	</div>
+</body>
+</html>
